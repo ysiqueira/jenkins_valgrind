@@ -16,13 +16,13 @@ overlapping_copy: overlapping_copy.c
 uninitialized_memory: uninitialized_memory.c
 
 indent:
-        indent *.c
+	indent *.c
 
 cppcheck:
-        cppcheck *.c
+	cppcheck *.c
 
 run: $(PROGRAMS)
-        for program in $(PROGRAMS); do echo $$program; ./$$program; done
+	for program in $(PROGRAMS); do echo $$program; ./$$program; done
 
 clean:
-        rm -f $(PROGRAMS) *.o *~ valgrind_*
+	rm -f $(PROGRAMS) *.o *~ valgrind_*
