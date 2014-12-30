@@ -24,3 +24,5 @@ cppcheck:
 run: $(PROGRAMS)
 	for program in $(PROGRAMS); do echo $$program; ./$$program; done
 
+clean:
+	
