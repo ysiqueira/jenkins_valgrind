@@ -25,4 +25,5 @@ run: $(PROGRAMS)
 	for program in $(PROGRAMS); do echo $$program; ./$$program; done
 
 clean:
+	rm -f $(PROGRAMS) *.o *~ valgrind_*
 	
